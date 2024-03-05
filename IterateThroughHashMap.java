@@ -19,9 +19,9 @@ public class MapTask {
         studentMap.put(108643, "Tayba");
 
         //iterate through HashMap
-        for (Integer idIntry : studentMap.keySet()){
-            //printing each ID with student name assigned to 
-            System.out.println("\n ID: " + idIntry + ", Student Name: " + studentMap.get(idIntry));
+        for (String value : studentMap.values()){
+            //printing each ID with student name assigned to
+            System.out.println(value);
         }
     }
 }
