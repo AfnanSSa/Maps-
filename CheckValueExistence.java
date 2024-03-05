@@ -19,7 +19,7 @@ public class MapTask {
         studentMap.put(108643, "Tayba");
         
         //checking and printing if a value exists in the HashMap
-        if (studentMap.containsKey(132423)){
+        if (studentMap.containsValue("Afnan")){
             //if true
             System.out.println("\nStudent is included in the HashMap");
         } else {
