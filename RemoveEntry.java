@@ -3,7 +3,6 @@
  * Task: Write a code segment that removes a student from the HashMap using their student ID.
  * Output: Print the updated HashMap to the console.*/
 
-import javax.naming.InsufficientResourcesException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,6 +19,7 @@ public class MapTask {
         studentMap.put(108643, "Tayba");
 
         //printing HashMap
+        System.out.println("\nHashMap before Removal:");
         printMap(studentMap);
 
         Integer removeID = 132423; //ID to be used for removing entry
@@ -28,6 +28,7 @@ public class MapTask {
         studentMap.remove(removeID);
 
         //printing HashMap after removal
+        System.out.println("\nHashMap after Removal:");
         printMap(studentMap);
 
     }
@@ -35,8 +36,8 @@ public class MapTask {
     // Method to print the HashMap
     public static void printMap(Map<Integer, String> map) {
         for (Integer id : map.keySet()) {
-            System.out.println("\nID: " + id + ", Student Name: " + map.get(id));
+            System.out.println("ID: " + id + ", Student Name: " + map.get(id));
         }
     }
 }
-}
+
